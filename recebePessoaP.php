@@ -4,31 +4,27 @@
 <?php
 $Pnome = $_POST['Pnome'];
 $Mnome = $_POST['Mnome'];
-$Idade = $_POST['Idade'];
-$Telefone = $_POST['Telefone'];
 $CPF = $_POST['CPF'];
-$sexo = $_POST['sexo'];
+$Sexo = $_POST['Sexo'];
 $Endereco = $_POST['Endereco'];
-
-
-// Algoritmo para BD aceitar a data.
+$Idade = $_POST['Idade'];
 $dataNascimento = $_POST['dataNascimento'];
 $dataP = explode('/', $dataNascimento);
 $dataNascimento = $dataP[2].'-'.$dataP[1].'-'.$dataP[0];
-//
 
-$conn = mysqli_connect($servidor, $dbusuario, $dbsenha, $dbname);
 
-mysqli_select_db($conn, '$dbname');
-$sql = "INSERT INTO  pessoa (Pnome ,Mnome ,Idade,Telefone ,CPF , sexo,  Endereco,  dataNascimento) VALUES ('$Pnome','$Mnome','$telefone' ,'$CPF', '$sexo', '$Endereco', '$dataNascimento')";
-    if(mysqli_query($conn, $sql)){
+$conn2 = mysqli_connect($servidor, $dbusuario, $dbsenha, $dbname);
+
+mysqli_select_db($conn2, '$dbname');
+$sql = "INSERT INTO  pessoas (Pnome ,Mnome,CPF , Sexo,  Endereco, Idade,dataNascimento) VALUES ('$Pnome','$Mnome','$CPF', '$Sexo', '$Endereco', '$Idade', '$dataNascimento')";
+    if(mysqli_query($conn2, $sql)){
         echo "<script>alert('Dados salvos'); window.location = 'cadPessoaP.html';</script>";
 }
 
     else{
-        echo "Deu erro: " .$sql . "<br>" . mysqli_error($conn);
+        echo "Deu erro: " .$sql . "<br>" . mysqli_error($conn2);
     }
-mysqli_close($conn);
+mysqli_close($conn2);
 
 
 
