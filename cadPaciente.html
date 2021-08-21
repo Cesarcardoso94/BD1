@@ -180,33 +180,40 @@
               <div class="row justify-content-center">
                 <!-- Left col -->
                 <section class="col-lg-9 connectedSortable">
-                  <form class="">
+                  <form action="recebePaciente.php" method="POST">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <label for="exampleInputEmail1" class="form-label">Identificação Doença</label>
+                        <input type="text" class="form-control" name = "idDoenca" placeholder="Identificação Doença">
+                      </div>
+                  </div>
                     <div class="row">
                         <div class="col-sm-12">
                           <label for="exampleInputEmail1" class="form-label">Convênio</label>
-                          <input type="text" class="form-control" placeholder="Convênio">
+                          <input type="text" class="form-control" name = " NSUS"placeholder="Convênio">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
                           <label for="exampleInputEmail1" class="form-label">Fatores Risco</label>
-                          <input type="text" class="form-control" placeholder="P. da Doença">
+                          <input type="text" class="form-control" name = "fatoresRisco" placeholder="Fatores Risco">
                         </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-12">
                         <div class="mb-3">
                           <label for="exampleFormControlTextarea1" class="form-label">Situação atual</label>
-                          <textarea class="form-control" rows="6"></textarea>
+                          <textarea class="form-control" name ="sitaucao" rows="6"></textarea>
                         </div>
                       </div>
                     </div>             
                   </form>
                   <div id="abaixo" class="row justify-content-center">
                       <div class="col-sm-2" style="margin-left: 50px;">
-                        <a href ="pacientesV.html" type = "submit" class="btn btn-primary">Cadastrar</a>
+                        <input href ="pacientesV.html" type="submit" value="Cadastrar" class="btn btn-primary">
                       </div>
                   </div>
+                </form>
                 </section>
               </div>
               <!-- /.row (main row) -->

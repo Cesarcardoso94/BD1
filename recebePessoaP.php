@@ -22,7 +22,7 @@ $conn = mysqli_connect($servidor, $dbusuario, $dbsenha, $dbname);
 mysqli_select_db($conn, '$dbname');
 $sql = "INSERT INTO  pessoa (Pnome ,Mnome ,Idade,Telefone ,CPF , sexo,  Endereco,  dataNascimento) VALUES ('$Pnome','$Mnome','$telefone' ,'$CPF', '$sexo', '$Endereco', '$dataNascimento')";
     if(mysqli_query($conn, $sql)){
-        echo "<script>alert('Dados salvos'); window.location = 'cadPessoa.html';</script>";
+        echo "<script>alert('Dados salvos'); window.location = 'cadPessoaP.html';</script>";
 }
 
     else{
