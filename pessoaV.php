@@ -73,7 +73,7 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <li class="nav-item">
-                            <a href="cadPessoaP.html" class="nav-link">
+                            <a href="pessoaV.php" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>Pacientes</p>
                             </a>
@@ -157,33 +157,30 @@
                             <section class="col-lg-12 connectedSortable">
                                 <table class="table table-striped table-bordered">
                                     <tr>
-                                        <th>Nome</th>
-                                        <th>Sobrenome</th>
-                                        <th>CPF</th>
-                                        <th>Idade</th>
-                                        <th>Sexo</th>
+                                        <th>CPF Paciente</th>
+                                        <th>Número SUS</th>
+                                        <th>ID Doença</th>
+                                        <th>Situação</th>
                                     </tr>
                                     <tr>
                                         <td>César</td>
                                         <td>Cardoso</td>
                                         <td>000.000.000-00</td>
                                         <td>26</td>
-                                        <td>Masculino</td>
                                     </tr>
 
                                     <?php include "connectionBD.php";
-                                    $sql_tipo = "SELECT * FROM pessoas";
-                                    $resulta = mysqli_query($conn, $sql_tipo);
+                                    $sql_paciente = "SELECT * FROM paciente";
+                                    $resulta = mysqli_query($conn, $sql_paciente);
 
                                     if ($resulta->num_rows > 0) {
                                         while ($row = $resulta->fetch_assoc()) {
 
                                             echo '<tr>';
-                                            echo '<td>' . $row['Pnome'] . '</td>';
-                                            echo '<td>' . $row['Mnome'] . '</td>';
-                                            echo '<td>' . $row['CPF'] . '</td>';
-                                            echo '<td>' . $row['Idade'] . '</td>';
-                                            echo '<td>' . $row['Sexo'] . '</td>';
+                                            echo '<td>' . $row['Pessoa_CPF'] . '</td>';
+                                            echo '<td>' . $row['NSUS'] . '</td>';
+                                            echo '<td>' . $row['idDoenca'] . '</td>';
+                                            echo '<td>' . $row['situacao'] . '</td>';
                                             echo '</tr>';
                                         }
                                     }
@@ -194,7 +191,7 @@
                                 </table>
                                 <div id="abaixo" class="row">
                                     <div class="col-sm-2" style="margin-left: 50px;">
-                                        <button type="button" class="btn btn-primary">Cadastrar</button>
+                                        <a href ="cadPessoaP.html"button type="button" class="btn btn-primary">Cadastrar</a>
                                     </div>
                                 </div>
                             </section>

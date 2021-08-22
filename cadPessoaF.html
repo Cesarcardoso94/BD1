@@ -180,68 +180,55 @@
               <div class="row justify-content-center">
                 <!-- Left col -->
                 <section class="col-lg-9 connectedSortable">
-                  <form action="" method="">
+                  <form action="recebePessoa.php" method="POST">
                     <div class="row">
                       <div class=" col-sm-6 mb-3">
                         <label for="exampleInputEmail1" class="form-label">Nome</label>
-                        <input type="text" class="form-control" placeholder="Nome">
+                        <input type="text" name="Pnome" class="form-control" placeholder="Nome">
                       </div>
                       <div class=" col-sm-6 mb-3">
                         <label for="exampleInputEmail1" class="form-label">Sobrenome</label>
-                        <input type="text" class="form-control" placeholder="Sobrenome">
+                        <input type="text" class="form-control" name="Mnome" placeholder="Sobrenome">
                       </div>
                     </div>
                     <div class="row">
                       <div class=" col-sm-12 mb-3">
                         <label for="exampleInputEmail1" class="form-label">CPF</label>
-                        <input type="text" class="form-control" placeholder="Somente numeros">
+                        <input type="text" class="form-control" name="CPF" placeholder="Somente numeros">
                       </div>
                     </div>
-                 
-                     <div class="row">
+  
+                    <div class="row">
                       <div class=" col-sm-6 mb-3">
                         <label for="exampleInputEmail1" class="form-label">Data de Nascimento</label>
-                        <input type="text" class="form-control" placeholder="00/00/00">
-                      </div> 
-
-                      <div class="col-sm-6 mb-3">
-                        <label class="form-label">Genero</label> 
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                          <label class="form-check-label" for="flexRadioDefault1">
-                            Masculino
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                          <label class="form-check-label" for="flexRadioDefault2">
-                            Feminino
-                          </label>
-                        </div>
+                        <input type="text" class="form-control" name="dataNascimento" placeholder="00/00/00">
+                      </div>
+  
+                      <div class=" col-sm-6 mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Sexo</label>
+                        <input type="text" class="form-control" name="Sexo" placeholder="Masculino ou Feminino">
                       </div>
                     </div>
-                    
+  
                     <div class="row">
                       <div class="col-sm-12">
                         <label for="exampleInputEmail1" class="form-label">Enderço</label>
-                        <input type="text" class="form-control" placeholder="Endereço">
+                        <input type="text" class="form-control" name="Endereco" placeholder="Endereço">
                       </div>
                     </div>
-
+  
                     <div class="row">
                       <div class="col-sm-6">
                         <label class="form-label">Idade</label>
-                        <input type="text" class="form-control" placeholder="Numero">
+                        <input type="text" class="form-control" name="Idade" placeholder="Numero">
                       </div>
-                    </div>                       
-                  
-                  <div id="abaixo" class="row justify-content-center">
+                    </div>
+                    <div id="abaixo" class="row justify-content-center">
                       <div class="col-sm-2" style="margin-left: 50px;">
-                        <a href ="cadFuncionario.html" type ="submit" class="btn btn-primary">Cadastrar</a>
+                        <input href="cadFuncionario.html" type="submit" value="Cadastrar" class="btn btn-primary">
                       </div>
-                  </div>
-                </form>
-                </section>
+                    </form>
+                    </section>
               </div>
               <!-- /.row (main row) -->
             </div>
