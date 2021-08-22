@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Gestão Covid</title>
+    <title>Gestão Hospitar</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
@@ -49,7 +49,7 @@
             class="brand-image img-circle elevation-3"
             style="opacity: 0.8"
           /> -->
-                <span class="brand-text font-weight-light">Gestão Covid</span>
+                <span class="brand-text font-weight-light">Gestão Hospitar</span>
             </a>
 
             <!-- Sidebar -->
@@ -161,6 +161,7 @@
                                         <th>CPF Paciente</th>
                                         <th>Status Leito</th>
                                         <th>Liberação Prevista</th>
+                                        <th>Tipo Leito</th>
                                     </tr>
                                     <tr>
                                         <td>00001</td>
@@ -181,6 +182,7 @@
                                             echo '<td>' . $row['Paciente_CPF'] . '</td>';
                                             echo '<td>' . $row['status'] . '</td>';
                                             echo '<td>' . $row['dataLiberacao'] . '</td>';
+                                            echo '<td>' . $row['tipoL'] . '</td>';
                                             echo '</tr>';
                                         }
                                     }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Gestão Covid</title>
+    <title>Gestão Hospitar</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
@@ -48,7 +48,7 @@
             class="brand-image img-circle elevation-3"
             style="opacity: 0.8"
           /> -->
-                <span class="brand-text font-weight-light">Gestão Covid</span>
+                <span class="brand-text font-weight-light">Gestão Hospitar</span>
             </a>
 
             <!-- Sidebar -->
@@ -63,7 +63,7 @@
               />
             </div> -->
                     <div class="info">
-                        <a href="#" class="d-block">Leitos Cadastrados</a>
+                        <a href="#" class="d-block">Doenças Cadastradas</a>
                     </div>
                 </div>
                 <!-- Sidebar Menu -->
@@ -137,7 +137,7 @@
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-sm-12">
-                                <h1 class="m-0">Variantes COVID cadastradas</h1>
+                                <h1 class="m-0">Doenças cadastradas</h1>
                                 <hr />
                             </div>
                         </div>
@@ -157,7 +157,7 @@
                                 <table class="table table-striped table-bordered">
                                     <tr>
                                         <th>Identificador Doença</th>
-                                        <th>Nome Variável</th>
+                                        <th>Nome Doença</th>
                                         <th>Gravidade</th>
                                     </tr>
                                     <?php include "connectionBD.php";

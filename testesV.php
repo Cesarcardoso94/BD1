@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Gestão Covid</title>
+    <title>Gestão Hospitar</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
@@ -49,7 +48,7 @@
             class="brand-image img-circle elevation-3"
             style="opacity: 0.8"
           /> -->
-                <span class="brand-text font-weight-light">Gestão Covid</span>
+                <span class="brand-text font-weight-light">Gestão Hospitars</span>
             </a>
 
             <!-- Sidebar -->
@@ -64,7 +63,7 @@
               />
             </div> -->
                     <div class="info">
-                        <a href="#" class="d-block">Leitos Cadastrados</a>
+                        <a href="#" class="d-block">Testes Cadastrados</a>
                     </div>
                 </div>
                 <!-- Sidebar Menu -->
@@ -72,52 +71,52 @@
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-               <li class="nav-item">
-              <a href="pessoaV.php" class="nav-link">
-                <i class="nav-icon fas fa-th"></i>
-                <p>Pacientes</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="funcionarioV.php" class="nav-link">
-                <i class="nav-icon fas fa-copy"></i>
-                <p>
-                  Funcionarios
-                  <i class="fas right"></i>
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="doencaV.php" class="nav-link">
-                <i class="nav-icon fas fa-chart-pie"></i>
-                <p>
-                  Doenças
-                  <i class="right fas"></i>
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="leitosV.php" class="nav-link">
-                <i class="nav-icon fas fa-tree"></i>
-                <p>
-                  Leitos
-                  <i class="fas"></i>
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="testesV.php" class="nav-link">
-                <i class="nav-icon fas fa-edit"></i>
-                <p>
-                  Testes
-                  <i class="fas"></i>
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class=""></i>
-                <p>
+                        <li class="nav-item">
+                            <a href="pessoaV.php" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>Pacientes</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="funcionarioV.php" class="nav-link">
+                                <i class="nav-icon fas fa-copy"></i>
+                                <p>
+                                    Funcionarios
+                                    <i class="fas right"></i>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="doencaV.php" class="nav-link">
+                                <i class="nav-icon fas fa-chart-pie"></i>
+                                <p>
+                                    Doenças
+                                    <i class="right fas"></i>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="leitosV.php" class="nav-link">
+                                <i class="nav-icon fas fa-tree"></i>
+                                <p>
+                                    Leitos
+                                    <i class="fas"></i>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="testesV.php" class="nav-link">
+                                <i class="nav-icon fas fa-edit"></i>
+                                <p>
+                                    Testes
+                                    <i class="fas"></i>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class=""></i>
+                                <p>
                                     Sair
                                     <i class="fas"></i>
                                 </p>
@@ -139,7 +138,7 @@
                         <div class="row mb-2">
                             <div class="col-sm-12">
                                 <h1 class="m-0">Teste realizados</h1>
-                                <hr/>
+                                <hr />
                             </div>
                         </div>
                         <!-- /.row -->
@@ -161,8 +160,8 @@
                                         <th>Identificador Teste</th>
                                         <th>Resultado</th>
                                         <th>Data</th>
-                                        
-                                    </tr>                               
+
+                                    </tr>
                                     <?php include "connectionBD.php";
                                     $sql_teste = "SELECT * FROM teste";
                                     $resulta = mysqli_query($conn, $sql_teste);
@@ -185,7 +184,7 @@
                                 </table>
                                 <div id="abaixo" class="row">
                                     <div class="col-sm-2" style="margin-left: 50px;">
-                                        <a href ="cadTeste.html"button type="button" class="btn btn-primary">Cadastrar</a>
+                                        <a href="cadTeste.html" button type="button" class="btn btn-primary">Cadastrar</a>
                                     </div>
                                 </div>
                             </section>
