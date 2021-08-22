@@ -138,8 +138,8 @@
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-sm-12">
-                                <h1 class="m-0">Variantes COVID cadastradas</h1>
-                                <hr />
+                                <h1 class="m-0">Teste realizados</h1>
+                                <hr/>
                             </div>
                         </div>
                         <!-- /.row -->
@@ -185,7 +185,7 @@
                                 </table>
                                 <div id="abaixo" class="row">
                                     <div class="col-sm-2" style="margin-left: 50px;">
-                                        <a href ="alocLeito.html"button type="button" class="btn btn-primary">Cadastrar</a>
+                                        <a href ="cadTeste.html"button type="button" class="btn btn-primary">Cadastrar</a>
                                     </div>
                                 </div>
                             </section>
