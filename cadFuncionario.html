@@ -180,14 +180,18 @@
               <div class="row justify-content-center">
                 <!-- Left col -->
                 <section class="col-lg-9 connectedSortable">
-                  <form class="row">
+                  <form  action="recebeFuncionario.php" method="POST">
                     <div class=" col-12 mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Carteira de Trabalho</label>
-                      <input type="text" class="form-control" placeholder="">
+                      <label for="exampleInputEmail1" class="form-label">CPF do Funcionário</label>
+                      <input type="text" name ="funcionarioCPF"class="form-control" placeholder="CPF">
+                    </div>
+                    <div class=" col-6 mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Matricula</label>
+                      <input type="text" class="form-control" name="Matricula" placeholder="matricula">
                     </div>
                     <div class="col-6 mb-3">
                       <label for="exampleInputEmail1" class="form-label"> Cargo </label>
-                        <select class="form-control form-select form-select-sm" aria-label=".form-select-sm example">
+                        <select class="form-control form-select form-select-sm" name="Cargo" aria-label=".form-select-sm example">
                           <option selected>Escolha um</option>
                           <option value="medico">Medico</option>
                           <option value="enfermeiro">Enfermeiro</option>
@@ -196,19 +200,19 @@
                     </div>
                     <div class="col-6 mb-3">
                       <label for="exampleInputEmail1" class="form-label"> Horas de Trabalho </label>
-                        <select class="form-control form-select form-select-sm" aria-label=".form-select-sm example">
+                        <select class="form-control form-select form-select-sm" name="HTrabalhada" aria-label=".form-select-sm example">
                           <option selected>4h - 8h</option>
                           <option value="4">4H</option>
                           <option value="6">6H</option>
                           <option value="8">8H</option>
                         </select> 
                     </div>
-                  </form>
                   <div id="abaixo" class="row justify-content-center">
                       <div class="col-sm-2" style="margin-left: 50px;">
-                        <button href="cadPessoaF.html" type="submit" class="btn btn-primary">Cadastrar</button>
+                        <button href="cadFuncionario.html" type="submit" class="btn btn-primary">Cadastrar</button>
                       </div>
                   </div>
+                </form>
                 </section>
               </div>
               <!-- /.row (main row) -->

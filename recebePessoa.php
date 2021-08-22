@@ -18,7 +18,7 @@ $conn2 = mysqli_connect($servidor, $dbusuario, $dbsenha, $dbname);
 mysqli_select_db($conn2, '$dbname');
 $sql = "INSERT INTO  pessoas (Pnome ,Mnome,CPF , Sexo,  Endereco, Idade,dataNascimento) VALUES ('$Pnome','$Mnome','$CPF', '$Sexo', '$Endereco', '$Idade', '$dataNascimento')";
     if(mysqli_query($conn2, $sql)){
-        echo "<script>alert('Dados salvos'); window.location = 'cadPessoaP.html';</script>";
+        echo "<script>alert('Dados salvos'); window.location = 'cadPaciente.html';</script>";
 }
 
     else{
