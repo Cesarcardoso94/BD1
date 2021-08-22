@@ -20,7 +20,7 @@ $conn1 = mysqli_connect($servidor, $dbusuario, $dbsenha, $dbname);
 mysqli_select_db($conn1, '$dbname');
 $sql = "INSERT INTO  leitos (idLeito ,status, tipoL ,dataLiberacao, Paciente_CPF) VALUES ('$idLeito','$status','$tipoL','$dataLiberacao', '$Paciente_CPF')";
     if(mysqli_query($conn1, $sql)){
-        echo "<script>alert('Dados salvos'); window.location = 'cadDoenca.html';</script>";
+        echo "<script>alert('Dados salvos'); window.location = 'leitosV.php';</script>";
 }
 
     else{

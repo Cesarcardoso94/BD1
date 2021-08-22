@@ -12,7 +12,7 @@ $conn = mysqli_connect($servidor, $dbusuario, $dbsenha, $dbname);
 mysqli_select_db($conn, '$dbname');
 $sql = "INSERT INTO  funcionario (Cargo,funcionarioCPF,HTrabalhada,Matricula) VALUES ('$Cargo','$funcionarioCPF','$HTrabalhada','$Matricula')";
     if(mysqli_query($conn, $sql)){
-        echo "<script>alert('Dados salvos'); window.location = 'cadPaciente.html';</script>";
+        echo "<script>alert('Dados salvos'); window.location = 'funcionarioV.php';</script>";
 }
 
     else{

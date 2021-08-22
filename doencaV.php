@@ -181,7 +181,7 @@
                                 </table>
                                 <div id="abaixo" class="row">
                                     <div class="col-sm-2" style="margin-left: 50px;">
-                                        <a href="alocLeito.html" button type="button" class="btn btn-primary">Cadastrar</a>
+                                        <a href="cadDoenca.html" button type="button" class="btn btn-primary">Cadastrar</a>
                                     </div>
                                 </div>
                             </section>
