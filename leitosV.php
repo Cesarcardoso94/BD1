@@ -163,13 +163,6 @@
                                         <th>Liberação Prevista</th>
                                         <th>Tipo Leito</th>
                                     </tr>
-                                    <tr>
-                                        <td>00001</td>
-                                        <td>000.000.000-00</td>
-                                        <td>Ocupado</td>
-                                        <td>26/10/2021</td>
-                                    </tr>
-
                                     <?php include "connectionBD.php";
                                     $sql_leitos = "SELECT * FROM leitos";
                                     $resulta = mysqli_query($conn, $sql_leitos);

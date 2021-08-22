@@ -162,13 +162,6 @@
                                         <th>ID Doença</th>
                                         <th>Situação</th>
                                     </tr>
-                                    <tr>
-                                        <td>César</td>
-                                        <td>Cardoso</td>
-                                        <td>000.000.000-00</td>
-                                        <td>26</td>
-                                    </tr>
-
                                     <?php include "connectionBD.php";
                                     $sql_paciente = "SELECT * FROM paciente";
                                     $resulta = mysqli_query($conn, $sql_paciente);

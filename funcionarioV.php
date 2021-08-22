@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,52 +71,52 @@
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-               <li class="nav-item">
-              <a href="pessoaV.php" class="nav-link">
-                <i class="nav-icon fas fa-th"></i>
-                <p>Pacientes</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="funcionarioV.php" class="nav-link">
-                <i class="nav-icon fas fa-copy"></i>
-                <p>
-                  Funcionarios
-                  <i class="fas right"></i>
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="doencaV.php" class="nav-link">
-                <i class="nav-icon fas fa-chart-pie"></i>
-                <p>
-                  Doenças
-                  <i class="right fas"></i>
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="leitosV.php" class="nav-link">
-                <i class="nav-icon fas fa-tree"></i>
-                <p>
-                  Leitos
-                  <i class="fas"></i>
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="testesV.php" class="nav-link">
-                <i class="nav-icon fas fa-edit"></i>
-                <p>
-                  Testes
-                  <i class="fas"></i>
-                </p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class=""></i>
-                <p>
+                        <li class="nav-item">
+                            <a href="pessoaV.php" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>Pacientes</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="funcionarioV.php" class="nav-link">
+                                <i class="nav-icon fas fa-copy"></i>
+                                <p>
+                                    Funcionarios
+                                    <i class="fas right"></i>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="doencaV.php" class="nav-link">
+                                <i class="nav-icon fas fa-chart-pie"></i>
+                                <p>
+                                    Doenças
+                                    <i class="right fas"></i>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="leitosV.php" class="nav-link">
+                                <i class="nav-icon fas fa-tree"></i>
+                                <p>
+                                    Leitos
+                                    <i class="fas"></i>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="testesV.php" class="nav-link">
+                                <i class="nav-icon fas fa-edit"></i>
+                                <p>
+                                    Testes
+                                    <i class="fas"></i>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class=""></i>
+                                <p>
                                     Sair
                                     <i class="fas"></i>
                                 </p>
@@ -162,12 +161,7 @@
                                         <th>Cargo</th>
                                         <th>Horas trabalhadas</th>
                                     </tr>
-                                    <tr>
-                                        <td>000.000.000-00</td>
-                                        <td>0001</td>
-                                        <td>Estagiário</td>
-                                        <td>00:04</td>
-                                    </tr>
+
 
                                     <?php include "connectionBD.php";
                                     $sql_funcionario = "SELECT * FROM funcionario";
@@ -191,7 +185,7 @@
                                 </table>
                                 <div id="abaixo" class="row">
                                     <div class="col-sm-2" style="margin-left: 50px;">
-                                        <a href ="cadPessoaF.html"button type="button" class="btn btn-primary">Cadastrar</a>
+                                        <a href="cadPessoaF.html" button type="button" class="btn btn-primary">Cadastrar</a>
                                     </div>
                                 </div>
                             </section>
