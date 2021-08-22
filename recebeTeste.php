@@ -18,7 +18,7 @@ $conn1 = mysqli_connect($servidor, $dbusuario, $dbsenha, $dbname);
 mysqli_select_db($conn1, '$dbname');
 $sql = "INSERT INTO  teste (idTeste, data ,resultado, DDoenca, pacienteCPF) VALUES ('$idTeste','$data','$resultado', '$DDoenca', '$pacienteCPF')";
     if(mysqli_query($conn1, $sql)){
-        echo "<script>alert('Dados salvos'); window.location = 'cadDoenca.html';</script>";
+        echo "<script>alert('Dados salvos'); window.location = 'testesV.php';</script>";
 }
 
     else{
